@@ -21,13 +21,7 @@
             data: JSON.stringify(authResponse),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            success: function (response) {
-                var resp = JSON.parse(response)
-                alert(resp.status);
-            },
-            error: function (xhr, status) {
-                alert("error");
-            }
+           
         });
       }
       statusChangeCallback(response);
