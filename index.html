@@ -13,7 +13,7 @@
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       if (response.status === 'connected') {
         var authResponse = response.authResponse
-        const Url='https://conversational-platform-external-gateway.wavy.global/cp/messenger-token-resolver/api/v1/fbaccess/persist/credential/9419/285035489495416'
+        const Url='https://conversational-platform-external-gateway-poc.wavy.global/cp/messenger-token-resolver/api/v1/fbaccess/persist/credential/004/448611159104648'
         $.ajax({
             url: Url,
             type: "POST",
@@ -29,10 +29,10 @@
   }
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '285035489495416',
+      appId      : '448611159104648',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 'v9.0'           // Use this Graph API version for this call.
+      version    : 'v10.0'           // Use this Graph API version for this call.
     });
 
     FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
