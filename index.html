@@ -13,7 +13,7 @@
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       if (response.status === 'connected') {
         var authResponse = response.authResponse
-        const Url='https://eca5eb7c6463.ngrok.io/api/v1/fbaccess/persist/credential/004/1449189245267991'
+        const Url='http://eca5eb7c6463.ngrok.io/api/v1/fbaccess/persist/credential/004/1449189245267991'
         $.ajax({
             url: Url,
             type: "POST",
