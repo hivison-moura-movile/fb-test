@@ -13,7 +13,7 @@
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       if (response.status === 'connected') {
         var authResponse = response.authResponse
-        const URL='https://9f02f5c9868d.ngrok.io/api/v1/fbaccess/persist/credential/004/285035489495416'
+        const URL='https://029b520b7b70.ngrok.io/api/v1/fbaccess/persist/credential/004/285035489495416'
         $.ajax({
             url: URL,
             type: "POST",
@@ -48,7 +48,7 @@
     });
   }
 </script>
-<fb:login-button scope="instagram_manage_messages,instagram_basic,pages_manage_metadata,pages_read_engagement,public_profile,pages_messaging" onlogin="checkLoginState();"
+<fb:login-button scope="instagram_manage_messages,instagram_basic,pages_manage_metadata,pages_read_engagement,public_profile,pages_messaging" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
 </div>
