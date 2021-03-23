@@ -13,9 +13,9 @@
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       if (response.status === 'connected') {
         var authResponse = response.authResponse
-        const URL='https://029b520b7b70.ngrok.io/api/v1/fbaccess/persist/credential/004/285035489495416'
+        const Url='https://conversational-platform-external-gateway-poc.wavy.global/cp/messenger-token-resolver/api/v1/fbaccess/persist/credential/004/1449189245267991'
         $.ajax({
-            url: URL,
+            url: Url,
             type: "POST",
             crossDomain: true,
             data: JSON.stringify(authResponse),
@@ -32,7 +32,7 @@
       appId      : '1449189245267991',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 'v10.0'           // Use this Graph API version for this call.
+      version    : 'v9.0'           // Use this Graph API version for this call.
     });
 
     FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
@@ -55,4 +55,3 @@
 <!-- Load the JS SDK asynchronously -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://chatbox.prod.europe-west1.gc.chatlayer.ai/sdk/60512c5bdcb28d54b6a6ba48" referrerpolicy="no-referrer-when-downgrade" onload='chatlayer({"lang":"en","animation":"random"})' async></script>
